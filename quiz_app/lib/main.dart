@@ -135,14 +135,16 @@ class _QuizlerAppState extends State<QuizlerApp> {
                   ],
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  
                   children: [
                     for (int i = 0; i < result.length; i++)
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        child: Icon(
-                          result[i],
-                          color: (result[i] == Icons.check) ? Colors.green : Colors.red,
+                      Expanded(
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          child: Icon(
+                            result[i],
+                            color: (result[i] == Icons.check) ? Colors.green : Colors.red,
+                          ),
                         ),
                       ),
                   ],
