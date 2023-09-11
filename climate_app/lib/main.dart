@@ -1,13 +1,12 @@
+import 'package:climate_app/loadingScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        
-      ),
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoadingScreen()
     ),
-  );
+  );  
 }
-
-
